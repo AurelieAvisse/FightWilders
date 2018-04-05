@@ -1,0 +1,25 @@
+<div class="container">
+
+  <div class="wild_combat">
+    <div class="mx-auto">
+      <h1>Wild combat</h1>
+    </div>
+  </div>
+
+  <div class="row fighters">
+    <li *ngFor="let hero of heroes | slice:0:8 ;let i = index">
+
+      <img src = {{hero.images.sm}}>
+
+    </li>
+
+  </div>
+
+  <div class="row play">
+    <div class="mx-auto">
+      <button class="buttonplay" routerLink="/game" routerLinkActive="active">
+        <span>Fight!</span>
+      </button>
+    </div>
+  </div>
+</div>
