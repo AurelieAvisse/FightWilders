@@ -19,7 +19,7 @@ export class AppComponent implements OnInit {
     this.http.get('https://akabab.github.io/superhero-api/api/all.json').subscribe(heroes => {
       console.log(heroes);
       this.heroes = heroes;
-      this.point = '75%';
+      
     });
     
   }

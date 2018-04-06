@@ -17,13 +17,23 @@ export class HomeComponent implements OnInit {
   healthPlayer = 100;
   healthIa = 100;
   point ='';
+  myEvent(e) {
+    this.selectIa.life -= 10;
+    }
   
-  getPerso(param) {
-  this.selectPlayer = this.heroes[param];
-  console.log(this.selectPlayer);
-  this.getIa();
-  }
+    mySecondEvent(e) {
+      this.selectPlayer.life -= 10;
+      }
+  
+      myThreeEvent(e) {
+        this.selectIa.life -= 20;
+        }
+      
+        myFourEvent(e) {
+          this.selectPlayer.life -= 20;
+          }
   getIa() {
+
   const choice = Math.floor(Math.random() * 10);
   switch (choice) {
   case 0:
@@ -57,19 +67,28 @@ export class HomeComponent implements OnInit {
   this.selectIa = this.heroes[470];
   break;
   }
+  this.selectIa.life = 100;
   console.log(this.selectIa);
   }
   constructor(private http: HttpClient) {
   }
+  getPerso(param) {
+    this.selectPlayer = this.heroes[param];
+    this.selectPlayer.life = 100;
+    
+  
+    console.log(this.selectPlayer);
+    this.getIa();
+    }
 
   ngOnInit(): void {
-    this.point = '75%';
+    
+    this.point = '100%';
     this.http.get('https://akabab.github.io/superhero-api/api/all.json').subscribe(heroes => {
       console.log(heroes);
       this.heroes = heroes;
+      
     });
+    
   }
-}
-function degat() {
-
 }
