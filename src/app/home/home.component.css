@@ -30,3 +30,7 @@ h1
 p, h1 {
     color: white;
 }
+
+li {
+    list-style-type: none;
+}
