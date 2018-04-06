@@ -7,19 +7,82 @@
   </div>
 
   <div class="row fighters">
-    <li *ngFor="let hero of heroes | slice:0:8 ;let i = index">
-
-      <img src = {{hero.images.sm}}>
-
-    </li>
-
+    <li *ngFor="let hero of heroes | slice:0:8 ;let i = index"> 
+</li>
   </div>
 
-  <div class="row play">
-    <div class="mx-auto">
-      <button class="buttonplay" routerLink="/game" routerLinkActive="active">
-        <span>Fight!</span>
-      </button>
-    </div>
+  <div *ngIf='selectPlayer; then game else selectMenu'>
+</div>
+<div class="row play">
+  <div class="mx-auto">
+    <button class="buttonplay" routerLink="/game" routerLinkActive="active">
+      <span>Fight!</span>
+    </button>
   </div>
+</div>
+</div>
+<img (click) = 'getPerso(300)' src = {{hero.images.sm}}>
+<p>{{hero.name}}</p>
+<div class='container'>
+<ng-template #selectMenu>
+<p>Choose your favorite Hero ...</p>
+<div class='row'>
+<div class=' mx-auto'>
+<p>{{heroes[234].name}}</p>
+<img (click)='getPerso(234)' src="{{heroes[234].images.sm}}" />
+</div>
+<div class='mx-auto'>
+<p>{{heroes[67].name}}</p>
+<img (click)=' getPerso(67) ' src="{{heroes[67].images.sm}}" />
+</div>
+<div class='mx-auto'>
+<p>{{heroes[208].name}}</p>
+<img (click)='getPerso(208)' src="{{heroes[208].images.sm}}" />
+</div>
+<div class='mx-auto'>
+<p>{{heroes[412].name}}</p>
+<img (click)=' getPerso(412) ' src="{{heroes[412].images.sm}}" />
+</div>
+<div class='mx-auto'>
+<p>{{heroes[321].name}}</p>
+<img (click)='getPerso(321)' src="{{heroes[321].images.sm}}" />
+</div>
+<div class='mx-auto'>
+<p>{{heroes[197].name}}</p>
+<img (click)=' getPerso(197) ' src="{{heroes[197].images.sm}}" />
+</div>
+<div class='mx-auto'>
+<p>{{heroes[23].name}}</p>
+<img (click)='getPerso(23)' src="{{heroes[23].images.sm}}" />
+</div>
+<div class='mx-auto'>
+<p>{{heroes[560].name}}</p>
+<img (click)=' getPerso(560) ' src="{{heroes[560].images.sm}}" />
+</div>
+<div class='mx-auto'>
+<p>{{heroes[500].name}}</p>
+<img (click)='getPerso(500)' src="{{heroes[500].images.sm}}" />
+</div>
+<div class='mx-auto'>
+<p>{{heroes[2].name}}</p>
+<img (click)=' getPerso(2) ' src="{{heroes[2].images.sm}}" />
+</div>
+</div>
+</ng-template>
+
+<ng-template #game>
+<div class='row mx-auto'>
+<div class='offset-2 col-2'>
+<p>You</p>
+<img src='{{selectPlayer.images.sm}} ' />
+<p>vie : /100</p>
+</div>
+
+<div class='offset-2 col-2'>
+<p>Your enemy</p>
+<img src='{{selectIa.images.sm}} ' />
+<p>vie : /100</p>
+</div>
+</div>
+</ng-template>
 </div>
