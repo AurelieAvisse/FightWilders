@@ -16,6 +16,7 @@ export class HomeComponent implements OnInit {
   selectIa = null;
   healthPlayer = 100;
   healthIa = 100;
+  point ='';
   
   getPerso(param) {
   this.selectPlayer = this.heroes[param];
@@ -62,9 +63,13 @@ export class HomeComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    this.point = '75%';
     this.http.get('https://akabab.github.io/superhero-api/api/all.json').subscribe(heroes => {
       console.log(heroes);
       this.heroes = heroes;
     });
   }
+}
+function degat() {
+
 }

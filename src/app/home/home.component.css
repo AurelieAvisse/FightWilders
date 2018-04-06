@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Sigmar+One');
 
 .wild_combat{
-    margin-top: 2%;
+    margin: 2% 0% 2% 0% ;
 }
 
 h1 
@@ -12,8 +12,20 @@ h1
     font-size: 10vh;
 }
 
+.list1{
+    margin-bottom:3%;
+}
+
+img:hover{
+ border: 1px solid white;
+}
+
+img:active{
+    border: 1px solid red;
+}
+
 .play{
-    margin-bottom:2%;
+    margin:4% 0% 2% 0%;
 }
 
 .buttonplay
@@ -30,6 +42,7 @@ h1
 p, h1 {
     color: white;
 }
+
 
 li {
     list-style-type: none;
