@@ -1,5 +1,15 @@
 # FightWilders
 
+[Wild Code School La Loupe](https://wildcodeschool.fr/) - Hackathon 1 - April 2018
+
+Fighting game.
+Game realized in 24 hours.
+
+## Authors
+
+[Aurélie Avisse](https://github.com/AurelieAvisse)
+[Bastien Champion](https://github.com/BastienChampion)
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.3.
 
 ## Development server

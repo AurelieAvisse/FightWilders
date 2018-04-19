@@ -11,19 +11,18 @@ export class AppComponent implements OnInit {
 
   results = '';
   heroes
-  point ='';
-    constructor(private http: HttpClient) {
+  point = '';
+  constructor(private http: HttpClient) {
   }
 
   ngOnInit(): void {
     this.http.get('https://akabab.github.io/superhero-api/api/all.json').subscribe(heroes => {
       console.log(heroes);
       this.heroes = heroes;
-      
     });
-    
+
   }
-  
+
 }
 
 

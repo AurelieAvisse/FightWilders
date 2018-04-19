@@ -1,57 +1,55 @@
 @import url('https://fonts.googleapis.com/css?family=Sigmar+One');
-
-.wild_combat{
-    margin: 2% 0% 2% 0% ;
+.wild_combat {
+  margin: 2% 0% 2% 0%;
 }
 
-h1 
-{
-    color: white;
-    text-shadow: 3px 3px 4px grey;
-    text-align: center;
-    font-size: 10vh;
+h1 {
+  color: white;
+  text-shadow: 3px 3px 4px grey;
+  text-align: center;
+  font-size: 10vh;
 }
 
-.list1{
-    margin-bottom:3%;
+.list1 {
+  margin-bottom: 3%;
 }
 
-img:hover{
- border: 1px solid white;
+img:hover {
+  border: 1px solid white;
 }
 
-img:active{
-    border: 1px solid red;
+img:active {
+  border: 1px solid red;
 }
 
-.play{
-    margin:4% 0% 2% 0%;
+.play {
+  margin: 4% 0% 2% 0%;
 }
 
-.buttonplay
-{
-    width: 300px;
-    height: 70px;
-    border: 2px solid;
-    border-radius: 14px;
-    font-size: 40px;
-    color: black;
-    background-color: white;
+.buttonplay {
+  width: 300px;
+  height: 70px;
+  border: 2px solid;
+  border-radius: 14px;
+  font-size: 40px;
+  color: black;
+  background-color: white;
 }
 
-p, h1 {
-    color: white;
+p,
+h1 {
+  color: white;
 }
-
 
 li {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 .progress {
-    width: 50%;
+  width: 50%;
 }
 
-.but {
-    
+#vs {
+  font-size: 50px;
+  vertical-align: middle;
 }

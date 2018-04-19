@@ -74,36 +74,25 @@
 
   <ng-template #game>
     <div class='row mx-auto'>
-
-      <div class='offset-2 col-4'>
+      <div class='offset-1 col-4'>
         <p>You</p>
         <img src='{{selectPlayer.images.sm}} ' />
         <p>{{selectPlayer.life}}</p>
-        <div class="progress">
-          <div class="progress-bar" role="progressbar" [ngStyle]="{'width': point}"></div>
-
-        </div>
         <button (click)="myEvent($event)" class="but">AttackFire</button>
         <button (click)="myThreeEvent($event)" class="but">AttackWater</button>
-
       </div>
 
-      <div class='offset-2 col-4'>
+      <div class='col-2 pt-4' id="vs">
+        <p>VS</p>
+      </div>
+
+      <div class='offset-1 col-4'>
         <p>Your enemy</p>
         <img src='{{selectIa.images.sm}} ' />
         <p>{{selectIa.life}}</p>
-        <div class="progress">
-          <div class="progress-bar" role="progressbar" [ngStyle]="{'width': point}"></div>
-
-
-        </div>
         <button (click)="mySecondEvent($event)" class="but">AttackFire</button>
         <button (click)="myFourEvent($event)" class="but">AttackWater</button>
-
       </div>
-
-
-
     </div>
   </ng-template>
 </div>
